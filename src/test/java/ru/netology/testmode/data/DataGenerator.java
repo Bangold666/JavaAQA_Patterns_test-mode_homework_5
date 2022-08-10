@@ -56,11 +56,12 @@ public class DataGenerator {
         //  случайного пароля используйте faker
         return faker.internet().password();
     }
+
     @UtilityClass
     public static class Registration {
         public static User getUser(String status) {
             // TODO: создать пользователя user используя методы getRandomLogin(), getRandomPassword() и параметр status
-            return new User (getRandomLogin(), getRandomPassword(), status);
+            return new User(getRandomLogin(), getRandomPassword(), status);
         }
 
         public static User getRegisteredUser(String status) {
